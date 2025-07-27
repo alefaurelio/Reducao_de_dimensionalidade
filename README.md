@@ -1,2 +1,5 @@
 # Reducao_de_dimensionalidade
-Desafio de projeto proposto pela DIO no bootcamp de Machine Learning
+Desafio de projeto proposto pela DIO no bootcamp de Machine Learning. 
+O objetivo do projeto era usar a técnica de REDUÇÃO DE DIMENSIONALIDADE em uma imagem colorida, convertendo-a em escala de cinza e depois em preto e branco (binária).
+Uma das condições impostas pelo professor era de não utilizar biblioteca para esse fim, sendo assim só utilizei as bibliotecas do OpenCV para ler e converter a imagem para matriz RGB (colorida) e Matplotlib e Numpy para plotar sua visualização.
+Para fazer o processo de redução de dimensionalidade foi definida uma função para cada objetivo de redução (escala de cinza e preto e branco), utilizando-se do laço de repetição "for", sendo que para escala de cinza existe uma fórmula específica em função de cada valor r, g e b da matriz RGB. Já para transformar a imagem de escala de cinza para preto e branco, foi definido um limiar entre 0 e 255 (no caso escolhi 127), no qual todo número que fosse maior que ele na escala cinza receberia o número 255 (branco) e o que não estivesse nessa condição, ou seja, menor que 255, receberia o número 0 (preto).
